@@ -1,0 +1,31 @@
+<div class="col-lg-12">
+  <div>
+    <div><%= temperature %><span>°C</span></div>
+    <div>
+      <div>
+        <table>
+          <tbody>
+          <tr>
+            <th colspan="2">Details</th>
+          </tr>
+          <tr>
+            <td>Feels like</td>
+            <td><%= temperature %><span>°C</span></td>
+          </tr>
+          <tr>
+            <td>Wind</td>
+            <td><%= "#{wind} m/s"%></td>
+          </tr>
+          <tr>
+            <td>Humidity</td>
+            <td><%= "#{humidity}%"%></td>
+          </tr>
+          <tr>
+            <td>Pressure</td>
+            <td><%= "#{pressure} hPa"%></td>
+          </tr>
+          </tbody></table>
+      </div>
+    </div>
+  </div>
+</div>
