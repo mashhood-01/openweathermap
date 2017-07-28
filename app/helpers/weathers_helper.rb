@@ -5,6 +5,10 @@ module WeathersHelper
     "http://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/widgets/#{icon}.png"
   end
 
+  def success?
+    @response['cod'] === 200
+  end
+
   def description
     @response["weather"][0]['description']
   end
