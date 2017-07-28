@@ -10,5 +10,6 @@ class WeathersController < ApplicationController
     body = HTTParty.get("#{FIND_BY_CITY_NAME}#{params[:city]},#{params[:country_code]}").body
     @response = JSON.parse body
     @message = @response['message']
+    render 'weathers/index'
   end
 end
